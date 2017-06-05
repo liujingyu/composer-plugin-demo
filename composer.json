@@ -3,14 +3,19 @@
     "description": "composer plugin demo.",
     "type": "composer-plugin",
     "require": {
-        "composer-plugin-api": "1.0.0"
+        "composer-plugin-api": "^1.1"
     },
     "license": "MIT",
     "autoload": {
-        "psr-4": {"phpDocumentor\\Composer": "src/"}
+        "psr-4": {
+              "phpDocumentor\\Composer\\": "src/"
+        }
     },
     "extra" : {
-        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin",
+        "branch-alias": {
+              "dev-master":"1.0-dev"
+         }
     },
     "minimum-stability": "dev"
 }
