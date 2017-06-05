@@ -78,7 +78,7 @@ class TemplateInstaller extends LibraryInstaller
     {
         return ($this->composer->getPackage()->getName() === 'liujingyu/phpdocumentor')
             ? 'data/templates'
-            : $this->vendorDir . '/phpdocumentor/templates'
+            : $this->vendorDir . '/liujingyu/templates'
         ;
     }
 
