@@ -45,7 +45,7 @@ class TemplateInstaller extends LibraryInstaller
     }
 
     /**
-     * Extract the first 23 characters of the package name; which is expected to be the prefix.
+     * Extract the first 19 characters of the package name; which is expected to be the prefix.
      *
      * @param PackageInterface $package
      *
@@ -53,11 +53,11 @@ class TemplateInstaller extends LibraryInstaller
      */
     protected function extractPrefix(PackageInterface $package)
     {
-        return substr($package->getPrettyName(), 0, 23);
+        return substr($package->getPrettyName(), 0, 19);
     }
 
     /**
-     * Extract the everything after the first 23 characters of the package name; which is expected to be the short name.
+     * Extract the everything after the first 19 characters of the package name; which is expected to be the short name.
      *
      * @param PackageInterface $package
      *
@@ -65,7 +65,7 @@ class TemplateInstaller extends LibraryInstaller
      */
     protected function extractShortName(PackageInterface $package)
     {
-        return substr($package->getPrettyName(), 23);
+        return substr($package->getPrettyName(), 19);
     }
 
     /**
