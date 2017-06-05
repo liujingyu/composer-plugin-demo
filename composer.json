@@ -1,0 +1,16 @@
+{
+    "name": "phpdocumentor/template-installer-plugin",
+    "description": "composer plugin demo.",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "1.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {"phpDocumentor\\Composer": "src/"}
+    },
+    "extra" : {
+        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+    },
+    "minimum-stability": "dev"
+}
