@@ -1,5 +1,5 @@
 {
-    "name": "phpdocumentor/template-installer-plugin",
+    "name": "liujingyu/template-installer-plugin",
     "description": "composer plugin demo.",
     "type": "composer-plugin",
     "require": {

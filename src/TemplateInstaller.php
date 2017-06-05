@@ -13,11 +13,11 @@ class TemplateInstaller extends LibraryInstaller
     public function getPackageBasePath(PackageInterface $package)
     {
         $prefix = substr($package->getPrettyName(), 0, 23);
-        if ('phpdocumentor/template-' !== $prefix) {
+        if ('liujingyu/template-' !== $prefix) {
             throw new \InvalidArgumentException(
-                'Unable to install template, phpdocumentor templates '
+                'Unable to install template, liujingyu templates '
                 .'should always start their package name with '
-                .'"phpdocumentor/template-"'
+                .'"liujingyu/template-"'
             );
         }
 
@@ -29,6 +29,6 @@ class TemplateInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'phpdocumentor-template' === $packageType;
+        return 'liujingyu-template' === $packageType;
     }
 }
