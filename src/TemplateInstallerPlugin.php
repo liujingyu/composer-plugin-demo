@@ -5,8 +5,9 @@ namespace phpDocumentor\Composer;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
+use Composer\Plugin\Capable;
 
-class TemplateInstallerPlugin implements PluginInterface
+class TemplateInstallerPlugin implements PluginInterface, Capable
 {
 	public function activate(Composer $composer, IOInterface $io)
 	{
